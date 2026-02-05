@@ -1,32 +1,164 @@
+/* ===========================
+   GENERAL STYLES
+=========================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #0077cc;
-            font-size: 72px;
-        }
-        p {
-            font-size: 18px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #0077cc;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        button:hover {
-            background-color: #005fa3;
-        }
-        img {
-            max-width: 300px;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+nav {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 0;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #667eea;
+    border-bottom: 3px solid #667eea;
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+main {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.5);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ===========================
+   IMAGE STYLING
+=========================== */
+img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    main h2 {
+        font-size: 2rem;
+    }
+}
