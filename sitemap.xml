@@ -8,15 +8,16 @@
 
 
 <url>
-  <loc>https://aser-os.github.io/page/</loc>
+  <loc>https://aser-os.github.io</loc>
   <lastmod>2026-02-07T11:24:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://aser-os.github.io/page/index.html</loc>
+  <loc>https://aser-os.github.io/index.html</loc>
   <lastmod>2026-02-07T11:24:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 
 
 </urlset>
